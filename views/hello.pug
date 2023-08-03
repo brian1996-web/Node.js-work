@@ -1,0 +1,57 @@
+doctype html 
+html(lang = "en")
+   head  
+      title Hello World 
+      link(rel="stylesheet", href="/css/style.css")
+   body 
+      h1 How are you
+      .remark 
+          p Pug works
+      #Home.services   
+      ol#shopping.groceries 
+         li Mango 
+         li Orange 
+         li Grapes 
+         li Jackfruit 
+
+      .connect 
+         p 
+            a(href="www.google.com") Google
+         img#consume.cars(src="", alt="",width="", height="") 
+   div
+      form(action="post" name="sign-up")
+          label(for="email") Email
+          input#email(type="text", name="email")  
+          
+          label(for="username") Username 
+          input#username(type="text", name="username")
+
+          label(for="password") Password
+          input#password(type="password", name="password")
+
+   p 
+      |  name 
+      |  address 
+
+
+   - const pi = 3.14 
+  
+ 
+
+   p
+    ="2 to the power of ten is: " + 2**10    
+
+   -let name ="Briority"
+   p Hello #{name}
+
+- const employees =["Briority","peter","brian","golot","mimage","mellon"]
+ul 
+   if employees.length
+       each employee in employees 
+         li=employee
+   else 
+      li there are no employees registered 
+
+img(src= "public/img/coasters.jpg", width='500px' alt="")
+
+script(src='/js/validation.js')
